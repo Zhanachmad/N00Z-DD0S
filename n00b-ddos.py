@@ -11,8 +11,25 @@ if os.name == 'nt':
     os.system("cls")
 else:
     os.system("clear")
-
-
+print(" ")
+print("                 @@            ")
+print("               @@° @@             ")
+print(" @@@   @@@   @@      @@            ")
+print(" @@@ @°  @  @@        @@           ")
+print(" @@@     @ @@          @@           ")
+print(" @@      @ @@           @@           ")
+print(" @       @ @@           @@           ")
+print(" °       @                        ")
+print(" •       •                          ")
+print("                                    ")
+print("                                    ")
+print("                                     ")
+print("                                     ")
+print("                                     ")
+print("                                     ")
+print("[" + B "" + R + "#" + N + "] " + B "" + R + "Author : n00d" + N + " n00d ddos From - " + B "" + R + "za99" + N)
+print("\033[32m_\033[0m")
+print("\033[32m_\033[0m")
 url = input("URL:  ").strip()
 
 
