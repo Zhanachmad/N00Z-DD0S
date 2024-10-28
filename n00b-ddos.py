@@ -20,27 +20,24 @@ print("\033[31m     ®®®   ®®  ®®   ®®  ©©   ©©   ©©   ©©    \03
 print("\033[1m     ®®    ®®  ®®   ®®  ©©   ©©   ©©    ©©   \033[0m")            
 print("\033[1m     ®®    ®®  ®®   ®®  ©©   ©©   ©©   ©©    \033[0m")            
 print("\033[1m     ®®    ®®    ®®®      ©©©     ©©©©      \033[0m")             
-print("\033[1m  ______________________________________By: Za'99__ \033[0m")     
+print("\033[33m  ______________________________________By: Za'99__ \033[0m")     
 print("\033[1m [[  Z  N  E  E  P  E  R  S    A  T  T  A  C  K   ]] \033[0m")    
 print("\033[33m [[                                               ]] \033[0m")   
-print("\033[31m [[            F O R   F A L E S T I N E          ]] \033[0m")    
+print("\033[1m [[            F O R   F A L E S T I N E          ]] \033[0m")    
 print("\033[33m [[_______________________________________________]] \033[0m")      
-print("\033[32m_\033[0m")
-print("\033[32m_\033[0m")
-print("\033[0m_")
+print("\033[32m==============>>>\033[0m")
 url = input("URL:  ").strip()
 
 
 count = 0
 headers = []
 referer = [
-    "https://google.it/",
+    "https://instagram.com/",
     "https://facebook.com/",
     "https://alibaba.com/",
     "https://google.com/",
     "https://youtube.com",
-    
-]
+    ]
 
 
 def useragent():
