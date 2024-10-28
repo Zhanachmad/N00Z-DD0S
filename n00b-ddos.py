@@ -11,7 +11,7 @@ if os.name == 'nt':
     os.system("cls")
 else:
     os.system("clear")
-print(" ")
+print(" ")                                  
 print("                                    ©©                     ")
 print("                                    ©©                     ")
 print("                                    ©©                     ")
@@ -20,15 +20,14 @@ print("        ®®®   ®®  ®®   ®®  ©©   ©©  ©©   ©©             
 print("        ®®    ®®  ®®   ®®  ©©   ©©  ©©    ©©               ")
 print("        ®®    ®®  ®®   ®®  ©©   ©©  ©©   ©©                ")
 print("        ®®    ®®    ®®®      ©©©     ©©©©                  ")
-print("  ______________________________________By: Za'99__                                                ")
-print(" [[  Z  N  E  E  P  E  R  S    A  T  T  A  C  K   ]]                                                      ")
-print(" [[                   F     O     R               ]]                             ")
-print(" [[   P    A    L    E    S    T    I    N    E   ]]                                                      ")
-print(" [[_______________________________________________]]                                                         ")
-print("                                                           ")                                                           ")
+print("  ______________________________________By: Za'99__        ")
+print(" [[  Z  N  E  E  P  E  R  S    A  T  T  A  C  K   ]]       ")
+print(" [[                   F     O     R               ]]       ")
+print(" [[   P    A    L    E    S    T    I    N    E   ]]       ")
+print(" [[_______________________________________________]]       ")
 print("\033[32m_\033[0m")
 print("\033[32m_\033[0m")
-
+print("\033[0m_")
 url = input("URL:  ").strip()
 
 
