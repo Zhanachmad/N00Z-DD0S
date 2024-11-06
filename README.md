@@ -1,4 +1,4 @@
-# n00b-ddos
+# N00Z-DD0S
 # This script was created for educational purposes.
 
 # klon repository 
