@@ -1,4 +1,4 @@
-# _*_ coding: uts-8 _*_
+# _*_ coding: utf-8 _*_
 import os
 import requests
 import threading
