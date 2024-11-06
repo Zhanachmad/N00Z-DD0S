@@ -26,18 +26,18 @@ else:
     os.system("clear")
 print(" ")                                  
 print("\033[31m       ©©      ©     ©© ©    © © © ©©   © © © ©©      \033[0m")
-print("\033[31m       ©© ©    ©   ©© • • ©  • •   ©©   • •  ©©       \033[0m")                 
-print("\033[31m       ©©  ©   ©   ©© • • ©    • ©©  •    • ©© •      \033[0m")                 
-print("\033[96m       ©© • ©  ©   ©©  •  ©     ©© • •     ©© ••      \033[0m")             
-print("\033[96m       ©©  • © ©   ©©     ©    ©©  • •    ©©  ••      \033[0m")            
+print("\033[31m       ©© ©    ©   ©© • • ©  •    ©©    •    ©©       \033[0m")                 
+print("\033[31m       ©©  ©   ©   ©© • • ©      ©© •       ©© •      \033[0m")                 
+print("\033[96m       ©©   ©  ©   ©©  •  ©     ©©  •      ©©  •      \033[0m")             
+print("\033[96m       ©©  • © ©   ©©     ©    ©©         ©©          \033[0m")            
 print("\033[96m       ©©  • • ©   • ©© ©     ©© © © ©   ©© © © ©     \033[0m")            
 print("\033[96m       ••  • • •   • •• •     ••   • •   ••    •      \033[0m")            
-print("\033[96m        •  •   •   •   •        • •  •       • •     \033[0m")             
+print("\033[96m        •  •   •   •   •      •  •  •    •   •        \033[0m")             
 print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵  \033[0m")     
-print("\033[1m[[  Z  N  E  E  P  E  R  S    A  T  T  A  C  K                      \033[0m")    
-print("\033[33m[[                                                                 \033[0m")   
-print("\033[1m[[            F O R   F A L E S T I N E                             \033[0m")    
-print("\033[33m[[⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵  \033[0m")      
+print("\033[1m[[          Z  N  E  E  P  E  R  S    A  T  T  A  C  K              \033[0m")    
+print("\033[33m[[                       design By: ZA'99                          \033[0m")   
+print("\033[1m[[                   —°0  please use wisely  0°—                                      \033[0m")    
+print("\033[33m[[⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵\033[0m")      
 print("\033[32m-------------------------------->>>\033[0m")
 url = input("URL:  ").strip()
 
@@ -53,34 +53,19 @@ referer = [
     ]
 
 
-def useragent():
+
+  def useragent():
     global headers
-    
-    headers.append("Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11")
-    headers.append("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6")
-    headers.append("Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6")
-    headers.append("Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1")
-    headers.append("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5")
-    headers.append("Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5")
-    headers.append("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3")
-    headers.append("Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3")
-    headers.append("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3")
-    headers.append("Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3")
-    headers.append("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3")
-    headers.append("Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3")
-    headers.append("Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3")
-    headers.append("Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3")
-    headers.append("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24")
-    headers.append("Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24")
+      
     headers.append("Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; Microsoft; RM-1152)")
     headers.append("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)")
     headers.append("Mozilla/5.0 (Linux; Android 6.0.1; SM-G920V Build/MMB29K) AppleWebKit/537.36")
     headers.append("Mozilla/5.0 (Windows; U; Windows NT 5.0; es-ES; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3")
     headers.append("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0")
     headers.append("Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/36.0  Mobile/15E148 Safari/605.1.15")
-
+    headers.append("Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11")
+    
     return headers
-
 
 def genstr(size):
     out_str = ''
