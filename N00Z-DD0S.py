@@ -2,8 +2,7 @@
 import os
 import requests
 import threading
-import date
-import time
+import datetime
 import sys
 import random
 import string
@@ -75,13 +74,11 @@ def useragent():
 def genstr(size):
     out_str = ''
 
-    for _ in range(0, size):10000
+    for _ in range(0, size):
         code = random.randint(65, 90)
         out_str += chr(code)
     
     return out_str
-
-
 class httpth1(threading.Thread):
     def run(self):
         global count
