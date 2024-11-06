@@ -1,3 +1,4 @@
+# _*_ coding: uts-8 _*_
 import os
 import requests
 import threading
@@ -54,7 +55,7 @@ referer = [
 
 
 
-  def useragent():
+def useragent():
     global headers
       
     headers.append("Mozilla/5.0 (Windows Phone 10.0; Android 6.0.1; Microsoft; RM-1152)")
