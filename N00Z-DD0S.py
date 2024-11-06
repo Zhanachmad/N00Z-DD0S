@@ -46,6 +46,7 @@ url = input("URL:  ").strip()
 u = int(0)
 headers = []
 referer = [
+    
     "https://google.it/",
     "https://facebook.com/",
     "https://alibaba.com/",
