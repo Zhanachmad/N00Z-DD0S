@@ -69,7 +69,7 @@ def useragent():
 
 
 def genstr(size):
-    out_str = 10000
+    out_str = ''
 
     for _ in range(0, size):
         code = random.randint(65, 90)
